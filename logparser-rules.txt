@@ -1,1 +1,1 @@
-ok ^At revision \d+$
+error ^At revision \d+$

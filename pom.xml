@@ -79,10 +79,17 @@
                     <execution>
                         <id>verify-cpd</id>
                         <goals>
+                            <goal>check</goal>
                             <goal>cpd-check</goal>
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <verbose>true</verbose>
+                    <minimumTokens>25</minimumTokens>
+                    <includeTests>true</includeTests>
+                    <failOnViolation>false</failOnViolation>
+                </configuration>
             </plugin>
         </plugins>
     </build>
